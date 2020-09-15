@@ -1,0 +1,156 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap");
+
+/* Web styles*/
+
+html {
+  font-size: 100%;
+  --primary-light: #e6e6e6;
+  --primary-dark: #c5c3c6;
+  --secondary-dark: #46494c;
+  --secondary-light: #4c5c68;
+  --accent: #1985a1;
+} /*16px*/
+
+body {
+  background-color: var(--secondary-light);
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--secondary-dark)
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+  background-color: var(--primary-dark);
+}
+
+footer {
+  background-color: var(--accent);
+  color: var(--primary-light);
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 4.209rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+small,
+.text_small {
+  font-size: 0.75rem;
+}
+
+strong {
+  color: var(--accent)
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  background-color: var(--accent);
+  color: var(--primary-light);
+}
+
+figcaption {
+  text-align: center;
+  padding: 1rem;
+}
+
+figure img {
+  width: 100%;
+  margin auto;
+}
+
+#title {
+  text-align: center;
+  color: var(--primary-light);
+}
+
+#p-title {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding: 0 0 4rem 0;
+}
+
+a {
+  color: var(--accent);
+  line-height: 1.6;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+#headline {
+  max-width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+ul {
+  max-width: 50%;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+#h4-bottom {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0 4rem 0;
+}
+
+.header-title {
+  margin-top: 0;
+  padding-top: 1rem;
+  background-color: var(--accent);
+  color: var(--primary-light);
+}
