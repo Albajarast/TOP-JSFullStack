@@ -5,12 +5,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>freeCodeCamp Survey Form project</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body>
-  <h1>Survey Form</h1>
-  <p id="description">Thanks for taking time to complete the following survey form. We look forward to receiving your
-    feedback.</p>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <section class="section has-background-primary">
+    <div class="container">
+      <h1 class="title is-1 has-text-light is-capitalized has-text-centered" id=title>Survey form</h1>
+      <p class="subtitle is-5 has-text-light has-text-centered" id="description">Thanks for taking time to complete the
+        following survey form. We look forward to receiving your feedback.</p>
+    </div>
+  </section>
+
+  <div class="section form-section">
+    <div class="container ">
+      <div class="columns">
+        <div class="column is-hidden-mobile"></div>
+        <div class="column is-half box">
+          <form action="" id="survey-form">
+
+            <div class="field">
+              <label class="label" for="name" id="name-label">Name</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" name="name" id="name" placeholder="Please enter your name" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email" id="email-label" class="label">Email</label>
+              <!-- User story #6: Add form validation -->
+              <div class="control has-icons-left">
+                <input class="input" type="email" name="email" id="email" placeholder="Please enter your email"
+                  required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label" for="number" id="number-label">Age</label>
+              <!-- User story #8: Add form validation -->
+              <div class="control">
+                <input class="input" type="number" name="age" id="number" min="0" max="99" placeholder="0-99">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="dropdown" class="label">Please select and option:</label>
+              <div class="control">
+                <div class="select">
+                  <select name="dropdown" id="dropdown" class="input">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="field ">
+              <legend class="label">Please choose an option:</legend>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="answer" value="a">
+                  Option A
+                </label>
+              </div>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="answer" value="b">
+                  Option B
+                </label>
+              </div>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="answer" value="c">
+                  Option C
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <legend class="label">What would you like to have? <span class="is-size-7">(Check all that applies)</span>
+              </legend>
+              <div class="control">
+                <input type="checkbox" name="liking" id="car" value="car">
+                <label for="car">Car</label>
+              </div>
+
+              <div class="control">
+                <input type="checkbox" name="liking" id="house" value="house">
+                <label for="house">House</label>
+              </div>
+
+              <div class="control">
+                <input type="checkbox" name="liking" id="dog" value="dog">
+                <label for="dog">Dog</label>
+              </div>
+
+              <div class="control">
+                <input type="checkbox" name="liking" id="cat" value="cat">
+                <label for="cat">Cat</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea" name="message" id="message"
+                  placeholder="Please write your comments"></textarea>
+              </div>
+            </div>
+
+            <div class="control">
+              <button type="submit" id="submit" class="button is-primary">Submit</button>
+            </div>
+
+          </form>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Developed by <strong class="has-text-primary">David López Albajara</strong> with <strong
+          class="has-text-primary">Bulma</strong>. The
+        source code is licensed
+        <a class="has-text-primary" href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        4.0</a>.
+      </p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
