@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+/* h1 {
+
+} */
+
+h2 {
+  padding-bottom: 1.3rem;
+}
+
+p {
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+  background-color: steelblue;
+  padding: 0 10%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 2.5rem;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li:not(:first-child) {
+  padding-left: 40px;
+}
+
+.nav-links li a {
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.nav-links li a:hover {
+  background-color: red;
+}
+
+.btn-cta {
+  padding: 12px 30px;
+  margin-left: 40px;
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.btn-cta:hover{
+  background-color: hotpink;
+}
+
+main {
+  padding-top: 5rem;
+  padding: 0;
+}
+
+section:not(:first-child) {
+  padding: 3rem 25%;
+}
+
+section:nth-child(even) {
+  background-color: steelblue;
+}
+
+#video {
+  justify-content: space-around;
+  padding: 0 auto;
+}
+.hero {
+  height: 60vh;
+  background-color: hotpink;
+}

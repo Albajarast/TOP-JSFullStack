@@ -6,61 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Webpage</title>
 
-  <!-- Bootstrap v5-alpha -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+
 </head>
 
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+  <header id="header">
 
-  <!-- Bootstrap v5-alpha JS libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-  </script>
+    <img class="logo" src="img/Revengers-logo-dla.svg" alt="Website Logo" id="header-img">
+
+    <nav id="nav-bar">
+      <ul class="nav-links">
+        <li><a href="#our-mission" class="nav-link">Our mission</a></li>
+        <li><a href="#members" class="nav-link">Members</a></li>
+        <li><a href="#" class="nav-link">Build a team</a></li>
+        <li><a href="#" class="nav-link">Pricing</a></li>
+      </ul>
+    </nav>
+    <a class="btn-cta" href="#" class="nav-link">Contact Us!</a>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Revengers</h1>
+      <p>A bunch of super heroes ready to take revenge!</p>
+    </section>
+
+    <section id="our-mission">
+      <h2>Our mission</h2>
+      <p>Doing business like this takes much more effort than doing your own business at home, and on top of that
+        there's the curse of travelling, worries about making train connections, bad and irregular food, contact with
+        different people all the time so that you can never get to know anyone or become friendly with them.
+      </p>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AcVwRi3wSuA" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+
+
+
+    <section id="members">
+      <h2>Members</h2>
+
+      <p>And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates from
+        up there, especially when you have to go right up close because the boss is hard of hearing. Well, there's still
+        some hope; once I've got the money together to pay off my parents' debt to him - another five or six years I
+        suppose - that's definitely what I'll do.</p>
+      <p>
+        Doing business like this takes much more effort than doing your own business at home, and on top of that there's
+        the curse of travelling, worries about making train connections, bad and irregular food, contact with different
+        people all the time so that you can never get to know anyone or become friendly with them.
+      </p>
+      <p>
+        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+        horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+        belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+        seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him,
+        waved about helplessly as he looked. "What's happened to me?" he thought.
+      </p>
+    </section>
+
+    <section>
+      <h2 id="build-team">Build a team</h2>
+    </section>
+
+  </main>
+
 </body>
 
 </html>
