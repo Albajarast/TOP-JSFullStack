@@ -15,22 +15,26 @@
 
   <header id="header">
 
+    <!-- <svg > -->
     <img class="logo" src="img/Revengers-logo-dla.svg" alt="Website Logo" id="header-img">
+    <!-- </svg> -->
 
     <nav id="nav-bar">
       <ul class="nav-links">
         <li><a href="#our-mission" class="nav-link">Our mission</a></li>
         <li><a href="#members" class="nav-link">Members</a></li>
-        <li><a href="#" class="nav-link">Build a team</a></li>
-        <li><a href="#" class="nav-link">Pricing</a></li>
+        <li><a href="#build-team" class="nav-link">Build a team</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
       </ul>
     </nav>
     <a class="btn-cta" href="#" class="nav-link">Contact Us!</a>
   </header>
+
   <main>
+
     <section class="hero">
       <h1>Welcome to Revengers</h1>
-      <p>A bunch of super heroes ready to take revenge!</p>
+      <p id="p-headline">A bunch of super heroes ready to take revenge!</p>
     </section>
 
     <section id="our-mission">
@@ -39,16 +43,30 @@
         there's the curse of travelling, worries about making train connections, bad and irregular food, contact with
         different people all the time so that you can never get to know anyone or become friendly with them.
       </p>
-      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/AcVwRi3wSuA" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/AcVwRi3wSuA" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
-
-
 
     <section id="members">
       <h2>Members</h2>
+      <div class="team-cards">
+        <div class="member-card">Team Member 1</div>
+        <div class="member-card">Team Member 2</div>
+        <div class="member-card">Team Member 3</div>
+        <div class="member-card">Team Member 4</div>
+        <div class="member-card">Team Member 5</div>
+        <div class="member-card">Team Member 6</div>
+        <div class="member-card">Team Member 7</div>
+        <div class="member-card">Team Member 8</div>
+      </div>
+    </section>
 
+    <section id="build-team">
+      <h2>Build a team</h2>
       <p>And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates from
         up there, especially when you have to go right up close because the boss is hard of hearing. Well, there's still
         some hope; once I've got the money together to pay off my parents' debt to him - another five or six years I
@@ -67,11 +85,39 @@
       </p>
     </section>
 
-    <section>
-      <h2 id="build-team">Build a team</h2>
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates from
+        up there, especially when you have to go right up close because the boss is hard of hearing. Well, there's still
+        some hope; once I've got the money together to pay off my parents' debt to him - another five or six years I
+        suppose - that's definitely what I'll do.</p>
+      <p>
+        Doing business like this takes much more effort than doing your own business at home, and on top of that there's
+        the curse of travelling, worries about making train connections, bad and irregular food, contact with different
+        people all the time so that you can never get to know anyone or become friendly with them.
+      </p>
+      <p>
+        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+        horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+        belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+        seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him,
+        waved about helplessly as he looked. "What's happened to me?" he thought.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch if you want to arrange a demo with our revengers</h2>
+      <form action="https://www.freecodecamp.org/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="your_email@address.com" required>
+        <input type="submit" id="submit" value="Send" class="form-button">
+      </form>
     </section>
 
   </main>
+
+  <footer>
+    <p>Developed by David López Albajara</p>
+  </footer>
 
 </body>
 
